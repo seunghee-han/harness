@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "purpose": "Durable project memory for agents working on Etcher Solution.",
+  "update_rules": [
+    "Keep entries short, factual, and durable.",
+    "Do not store secrets, API keys, private data, raw logs, or full conversations.",
+    "Prefer summaries over transcripts.",
+    "Remove or move outdated details when they no longer help future work."
+  ],
+  "current_project_state": [
+    "Agent harness adoption is in progress, with core rules, references, skills, and workflows now consolidated under .agents.",
+    "Root harness files include AGENTS.md and FAILURE_LOG.md.",
+    "Agent rules and workflows are unified under .agents/rules and .agents/workflows.",
+    "Task-specific harness skills live under .agents/skills.",
+    "Harness reference docs live under .agents/reference.",
+    "Runtime stack facts are separated into .agents/reference/runtime_stack.md.",
+    "The application consists of a FastAPI backend on port 8080 and a Next.js frontend on port 3003.",
+    "Current launch scripts reference backend/requirements.txt, but that dependency file is absent and fresh backend setup needs reconciliation."
+  ],
+  "active_tasks": [
+    "Establish an agent harness so future agents can safely read rules, choose skills, verify changes, and record failures."
+  ],
+  "user_preferences": [
+    "Prefer Korean explanations when discussing project process and plans.",
+    "Preserve existing useful project structure and rules instead of replacing them blindly.",
+    "Keep harness files practical and directly usable by agents.",
+    "Use .agents/context.json for long-term memory instead of MEMORY.md."
+  ],
+  "resolved_issues": [],
+  "next_task_candidates": [
+    "Add more focused skills if recurring workflows appear, such as model training, realtime stream debugging, or report generation.",
+    "Add a lightweight script or checklist for harness validation if the harness becomes part of onboarding.",
+    "Reconcile backend dependency setup by adding the missing backend dependency manifest or updating the launch scripts.",
+    "Retire or rename remaining root legacy docs after confirming no external process depends on them."
+  ],
+  "last_updated": "2026-04-15"
+}
